@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c5f59c-86d1-4526-b855-661e309e96d6" name="Changes" comment="" />
+    <list default="true" id="f1c5f59c-86d1-4526-b855-661e309e96d6" name="Changes" comment="1. test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/Swagger2Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/PaymentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/PaymentApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/PaymentApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/config/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/config/SecurityConfiguration.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +78,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Synpulse/payment&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/pluralsight/spring-pagination-sorting-test&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;f83c2a85d972a89238f31296c63f0dbc&quot;
@@ -102,6 +112,7 @@
       <workItem from="1657698582023" duration="12828000" />
       <workItem from="1657759737084" duration="16873000" />
       <workItem from="1657848894179" duration="3589000" />
+      <workItem from="1657879229298" duration="4219000" />
     </task>
     <task id="LOCAL-00001" summary="1. main structure &amp; module test">
       <created>1657849091282</created>
