@@ -1,0 +1,14 @@
+com\ebanking\payment\model\Session.class
+com\ebanking\payment\model\Speaker.class
+com\ebanking\payment\controller\SessionsController.class
+com\ebanking\payment\repository\SpeakerRepository.class
+com\ebanking\payment\resource\UserResource.class
+com\ebanking\payment\controller\PortforlioController.class
+com\ebanking\payment\config\WebSecurityConfiguration.class
+com\ebanking\payment\model\MyUser.class
+com\ebanking\payment\repository\SessionRepository.class
+com\ebanking\payment\controller\HelloResource.class
+com\ebanking\payment\controller\SpeakerController.class
+com\ebanking\payment\service\MyUserDetailsService.class
+com\ebanking\payment\PaymentApplication.class
+com\ebanking\payment\config\KafkaConfiguration.class
