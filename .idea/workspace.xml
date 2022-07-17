@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c5f59c-86d1-4526-b855-661e309e96d6" name="Changes" comment="1. added logging module and settings">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/KafkaListeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/KafkaConsumerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java" afterDir="false" />
+    <list default="true" id="f1c5f59c-86d1-4526-b855-661e309e96d6" name="Changes" comment="1. added Dockerfile.&#10;2. Kafka module tested.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/KafkaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/KafkaProducerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/HelloResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/AuthJwtController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/PortforlioController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/util/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/config/KafkaConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/controller/HelloResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/util/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/util/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/controller/PortforlioController.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +115,7 @@
       <workItem from="1657879229298" duration="10067000" />
       <workItem from="1657941770759" duration="4203000" />
       <workItem from="1658036285062" duration="9119000" />
+      <workItem from="1658071422573" duration="1387000" />
     </task>
     <task id="LOCAL-00001" summary="1. main structure &amp; module test">
       <created>1657849091282</created>
@@ -155,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657906294641</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1. added Dockerfile.&#10;2. Kafka module tested.">
+      <created>1658071768035</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658071768035</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +190,8 @@
     <MESSAGE value="1. test github push" />
     <MESSAGE value="1. added swagger dependencies and ignored security about swagger pages(but swagger-ui.html does not work, so wierd" />
     <MESSAGE value="1. added logging module and settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. added logging module and settings" />
+    <MESSAGE value="1. added Dockerfile.&#10;2. Kafka module tested." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. added Dockerfile.&#10;2. Kafka module tested." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
