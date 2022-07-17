@@ -10,14 +10,13 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloResource {
+public class AuthJwtController {
     // test
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -28,6 +27,7 @@ public class HelloResource {
     @Autowired
     private JwtUtil jwtTokenUtil;
 
+    //## Test
     @RequestMapping("/hello")
     public String hello() {
         return "Hello World";
