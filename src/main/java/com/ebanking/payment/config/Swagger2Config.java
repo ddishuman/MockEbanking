@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Configuration
-public class Swagger2Configuration {
+public class Swagger2Config {
 
     @Bean
     public static BeanPostProcessor springfoxHandlerProviderBeanPostProcessor() {

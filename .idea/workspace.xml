@@ -5,9 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1c5f59c-86d1-4526-b855-661e309e96d6" name="Changes" comment="1. added Dockerfile.&#10;2. Kafka module tested.">
+      <change afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/filters/CustomAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/filters/CustomAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/UserBankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/MyUserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/controller/PortforlioController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/PaymentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/KafkaConsumerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/KafkaProducerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/KafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/Swagger2Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/Swagger2Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/AuthJwtController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/SessionsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/SpeakerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/filters/JwtRequestFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/MyUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/MyUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/Session.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/Speaker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/SessionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/SpeakerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/resource/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/service/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/service/MyUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/PaymentApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/PaymentApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/config/SecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/controller/SessionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/controller/SpeakerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/filters/JwtRequestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/MyUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/MyUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/Session.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/Speaker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/repository/SessionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/repository/SpeakerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/service/MyUserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/util/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/util/JwtUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,10 +112,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Synpulse/payment/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/github/spring-boot-fullstack-professional&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f83c2a85d972a89238f31296c63f0dbc&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;1e040cdea9a9ac9512be3de5b4de4ed9&quot;
   }
 }</component>
   <component name="ReactorSettings">
@@ -92,9 +132,17 @@
       <recent name="com.ebanking.payment.controller" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="PaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="payment" />
+      <option name="ACTIVE_PROFILES" />
+      <module name="MockEbanking" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ebanking.payment.PaymentApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,6 +164,15 @@
       <workItem from="1657941770759" duration="4203000" />
       <workItem from="1658036285062" duration="9119000" />
       <workItem from="1658071422573" duration="1387000" />
+      <workItem from="1658212540624" duration="1757000" />
+      <workItem from="1658215470210" duration="1606000" />
+      <workItem from="1658226068511" duration="2084000" />
+      <workItem from="1658279790542" duration="6397000" />
+      <workItem from="1658365190167" duration="16638000" />
+      <workItem from="1658453291244" duration="3393000" />
+      <workItem from="1658680747359" duration="1119000" />
+      <workItem from="1658711283856" duration="1767000" />
+      <workItem from="1658728862222" duration="612000" />
     </task>
     <task id="LOCAL-00001" summary="1. main structure &amp; module test">
       <created>1657849091282</created>
@@ -192,21 +249,5 @@
     <MESSAGE value="1. added logging module and settings" />
     <MESSAGE value="1. added Dockerfile.&#10;2. Kafka module tested." />
     <option name="LAST_COMMIT_MESSAGE" value="1. added Dockerfile.&#10;2. Kafka module tested." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/SessionsController.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ebanking/payment/service/MyUserDetailsService.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

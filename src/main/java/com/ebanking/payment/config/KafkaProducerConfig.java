@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
-public class KafkaProducerConfiguration {
+public class KafkaProducerConfig {
 
     @Bean
     public ProducerFactory<String, MyUser> producerFactory() {
