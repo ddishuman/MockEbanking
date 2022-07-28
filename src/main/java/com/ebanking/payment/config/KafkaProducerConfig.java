@@ -1,6 +1,7 @@
 package com.ebanking.payment.config;
 
 import com.ebanking.payment.model.MyUser;
+import com.ebanking.payment.model.Transaction;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;
@@ -17,7 +18,7 @@ import java.util.Map;
 public class KafkaProducerConfig {
 
     @Bean
-    public ProducerFactory<String, MyUser> producerFactory() {
+    public ProducerFactory<String, Transaction> producerFactory() {
         Map<String, Object> config = new HashMap<>();
 
         config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
@@ -28,7 +29,7 @@ public class KafkaProducerConfig {
     }
 
     @Bean
-    public KafkaTemplate<String, MyUser> kafkaTemplate() {
+    public KafkaTemplate<String, Transaction> kafkaTemplate() {
 
         return new KafkaTemplate<>(producerFactory());
     }
