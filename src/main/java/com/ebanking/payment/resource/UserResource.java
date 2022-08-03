@@ -4,7 +4,6 @@ import com.ebanking.payment.model.MyUser;
 import com.ebanking.payment.model.Transaction;
 import com.ebanking.payment.service.MyUserService;
 import lombok.RequiredArgsConstructor;
-import org.hibernate.event.spi.EventType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -14,9 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
-import java.util.*;
-
-import static org.hibernate.event.spi.EventType.values;
+import java.util.Date;
+import java.util.List;
+import java.util.Random;
+import java.util.UUID;
 
 
 @RestController
@@ -44,8 +44,8 @@ public class UserResource {
     public String post(@PathVariable("name") final String name) {
 
         // ### TODO: kafka msg format
-        for (int i=0; i< 100; i++) {
-            kafkaTemplate.send(TOPIC, new Transaction((long) i, UUID.randomUUID(),
+        for (int i=0; i< 1_000; i++) {
+            kafkaTemplate.send(TOPIC, new Transaction(UUID.randomUUID(),
                     Currency.getCurrency().toString() + " " + rndCurrency.nextInt(100) +1,
                     "CH93-0000-0000-0000-0000-0",
                     new Date(), "Online payment"));

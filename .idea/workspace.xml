@@ -4,13 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c5f59c-86d1-4526-b855-661e309e96d6" name="Changes" comment="1. added Dockerfile.&#10;2. Kafka module tested.">
+    <list default="true" id="f1c5f59c-86d1-4526-b855-661e309e96d6" name="Changes" comment="1. reverse some config errors.&#10;2. add the Transaction class for sending to kafka.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/dto/APIResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/TransactionPagingRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/TransactionRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/config/KafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/KafkaListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/KafkaListeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/MyUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/MyUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/UserBankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/UserBankAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/resource/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ebanking/payment/PaymentApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ebanking/payment/PaymentApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/MyUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/MyUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ebanking/payment/PaymentApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ebanking/payment/PaymentApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -75,7 +90,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Pluralsight/apache-kafka-getting-started/kafka&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/homework/MockEbanking/src/test/resources&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;1e040cdea9a9ac9512be3de5b4de4ed9&quot;
@@ -89,9 +104,12 @@
       <recent name="com.ebanking.payment.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\homework\MockEbanking\src\test\resources" />
       <recent name="D:\Synpulse\payment\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ebanking.payment.repository" />
+      <recent name="com.ebanking.payment.model" />
       <recent name="com.ebanking.payment.controller" />
     </key>
   </component>
@@ -102,7 +120,38 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.PaymentApplication">
+    <configuration name="PaymentApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MockEbanking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ebanking.payment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ebanking.payment" />
+      <option name="MAIN_CLASS_NAME" value="com.ebanking.payment.PaymentApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentApplicationTests.findTransactionsBetweenDates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MockEbanking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ebanking.payment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ebanking.payment" />
+      <option name="MAIN_CLASS_NAME" value="com.ebanking.payment.PaymentApplicationTests" />
+      <option name="METHOD_NAME" value="findTransactionsBetweenDates" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="MockEbanking" />
@@ -111,6 +160,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PaymentApplicationTests.findTransactionsBetweenDates" />
+        <item itemvalue="JUnit.PaymentApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -139,7 +194,11 @@
       <workItem from="1658757135760" duration="595000" />
       <workItem from="1658798776674" duration="1357000" />
       <workItem from="1658888786236" duration="11752000" />
-      <workItem from="1658969971581" duration="614000" />
+      <workItem from="1658969971581" duration="4848000" />
+      <workItem from="1659258111831" duration="9746000" />
+      <workItem from="1659406964521" duration="22543000" />
+      <workItem from="1659449472001" duration="5736000" />
+      <workItem from="1659481787378" duration="4164000" />
     </task>
     <task id="LOCAL-00001" summary="1. main structure &amp; module test">
       <created>1657849091282</created>
@@ -176,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658071768035</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1. reverse some config errors.&#10;2. add the Transaction class for sending to kafka.">
+      <created>1658970710940</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658970710940</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +281,23 @@
     <MESSAGE value="1. added swagger dependencies and ignored security about swagger pages(but swagger-ui.html does not work, so wierd" />
     <MESSAGE value="1. added logging module and settings" />
     <MESSAGE value="1. added Dockerfile.&#10;2. Kafka module tested." />
-    <option name="LAST_COMMIT_MESSAGE" value="1. added Dockerfile.&#10;2. Kafka module tested." />
+    <MESSAGE value="1. reverse some config errors.&#10;2. add the Transaction class for sending to kafka." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. reverse some config errors.&#10;2. add the Transaction class for sending to kafka." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

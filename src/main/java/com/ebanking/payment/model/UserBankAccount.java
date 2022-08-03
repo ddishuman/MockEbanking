@@ -21,4 +21,6 @@ public class UserBankAccount {
     public String username;
 
     public String account;
+
+    public Double credit;
 }
