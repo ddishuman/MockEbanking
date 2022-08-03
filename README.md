@@ -22,7 +22,9 @@
    1. first time to use this IDE
 5. Docker
    1. created the image by using the dockerfile.
+6. CircleCI
+   1. added config.yml 
 
-[3] conclusion
-Actually I am a C# developer, so this challenge is really exciting for me in two weeks!
-This project has not yet completed, so many parts I think I can improve.
+[3] Problems not yet solved
+1. How the kafka consumer filter the messages that come from producer
+2. Adjust the CircleCI config 
