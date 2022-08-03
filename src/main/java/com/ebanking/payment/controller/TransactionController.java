@@ -6,6 +6,7 @@ import com.ebanking.payment.model.Transaction;
 import com.ebanking.payment.repository.TransactionPagingRepo;
 import com.ebanking.payment.repository.TransactionRepo;
 //import com.ritaja.xchangerate.util.Currency;
+import com.ebanking.payment.repository.UserAccountRepo;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -23,7 +24,11 @@ import java.math.BigDecimal;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.util.Currency;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @RestController
 public class TransactionController {
@@ -42,6 +47,9 @@ public class TransactionController {
 
     @Autowired
     private TransactionPagingRepo transactionPagingRepo;
+
+    @Autowired
+    private UserAccountRepo userAccountRepo;
 
     //private CurrencyConverter converter;
 
@@ -82,9 +90,9 @@ public class TransactionController {
             // Accessing object
 //            String req_result = jsonobj.get("result").getAsString();
 //            System.out.println("req_result = " + req_result);
-            BigDecimal debit = BigDecimal.valueOf(12452); //= converter.convertCurrency(new BigDecimal("100"), Currency.USD, Currency.EUR);
+            Double debit = 1.0; //= converter.convertCurrency(new BigDecimal("100"), Currency.USD, Currency.EUR);
             // TODO
-            BigDecimal credit = BigDecimal.valueOf(12452);
+            Double credit = 12452.0;
             // log
             System.out.println("Trans = " + result.size());
             System.out.println("debit = " + debit);
@@ -92,7 +100,7 @@ public class TransactionController {
 
             result.forEach((txn) ->{
                 System.out.println(txn.tid);
-                System.out.println(txn.amount);
+                System.out.println(txn.getAmount());
             });
 
             // TODO
@@ -107,10 +115,19 @@ public class TransactionController {
     public APIResponse<Page<Transaction>> readTransactionsWithPagination(@PathVariable int page,
                                                                          @PathVariable int size)
             throws Exception {
+
+        Map<String, Double> currMap = new HashMap<>();
+
         try {
-//            List<Transaction> result = transactionRepo.findByValueDateBetween(
-//                    new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2022-08-03 07:00:00"),
-//                    new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2022-08-03 14:00:00"));
+            List<Transaction> result = transactionRepo.findByValueDateBetween(
+                    new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2022-08-03 07:00:00"),
+                    new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2022-08-03 14:00:00"));
+
+            currMap = result.stream()
+                    .collect(Collectors.groupingBy(
+                            (txn -> txn.currency),
+                            Collectors.summingDouble(Transaction::getAmount)
+                    ));
 
             Page<Transaction> resultWithPage = transactionPagingRepo.findByValueDateBetween(
                     new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2022-08-03 07:00:00"),
@@ -133,17 +150,24 @@ public class TransactionController {
             // Accessing object
 //            String req_result = jsonobj.get("result").getAsString();
 //            System.out.println("req_result = " + req_result);
-            BigDecimal debit = BigDecimal.valueOf(12452);; //= converter.convertCurrency(new BigDecimal("100"), Currency.USD, Currency.EUR);
+
+            //### exchange rate count by myself
+//            GBP,
+//                    CHF,
+//                    USD;
+            Double debit = currMap.get("GBP") * 1.22 +
+                           currMap.get("CHF") * 1.04 +
+                           currMap.get("USD"); //= converter.convertCurrency(new BigDecimal("100"), Currency.USD, Currency.EUR);
             // TODO
-            BigDecimal credit = BigDecimal.valueOf(12452);
-            // log
+            Double credit = userAccountRepo.findByUsername("arnold").credit;
+            //### log
 
             System.out.println("debit = " + debit);
             System.out.println("credit = " + credit);
 
             resultWithPage.forEach((txn) ->{
                 System.out.println(txn.tid);
-                System.out.println(txn.amount);
+                System.out.println(txn.getAmount());
             });
 
             // TODO

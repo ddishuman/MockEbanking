@@ -4,27 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c5f59c-86d1-4526-b855-661e309e96d6" name="Changes" comment="1. reverse some config errors.&#10;2. add the Transaction class for sending to kafka.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/dto/APIResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/TransactionPagingRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/TransactionRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="f1c5f59c-86d1-4526-b855-661e309e96d6" name="Changes" comment="Merge remote-tracking branch 'origin/master'">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/UserAccountRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/KafkaListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/KafkaListeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/PaymentApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/MyUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/MyUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/dto/APIResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/dto/APIResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/UserBankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/UserBankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/TransactionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/TransactionRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/resource/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ebanking/payment/PaymentApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ebanking/payment/PaymentApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/MyUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/MyUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/controller/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/controller/TransactionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/dto/APIResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/dto/APIResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/UserBankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/UserBankAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource$Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource$Currency.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ebanking/payment/PaymentApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ebanking/payment/PaymentApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -198,7 +193,7 @@
       <workItem from="1659258111831" duration="9746000" />
       <workItem from="1659406964521" duration="22543000" />
       <workItem from="1659449472001" duration="5736000" />
-      <workItem from="1659481787378" duration="4164000" />
+      <workItem from="1659481787378" duration="10417000" />
     </task>
     <task id="LOCAL-00001" summary="1. main structure &amp; module test">
       <created>1657849091282</created>
@@ -242,7 +237,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658970710940</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1. add pagination &#10;2. add config files for junit tests but didn't work">
+      <created>1659486713118</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659486713118</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1659486813582</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659486813582</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,19 +291,16 @@
     <MESSAGE value="1. added logging module and settings" />
     <MESSAGE value="1. added Dockerfile.&#10;2. Kafka module tested." />
     <MESSAGE value="1. reverse some config errors.&#10;2. add the Transaction class for sending to kafka." />
-    <option name="LAST_COMMIT_MESSAGE" value="1. reverse some config errors.&#10;2. add the Transaction class for sending to kafka." />
+    <MESSAGE value="1. add pagination &#10;2. add config files for junit tests but didn't work" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java</url>
-          <line>48</line>
+          <line>56</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>

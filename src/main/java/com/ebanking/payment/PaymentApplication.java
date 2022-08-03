@@ -1,6 +1,8 @@
 package com.ebanking.payment;
 
 import com.ebanking.payment.model.MyUser;
+import com.ebanking.payment.model.UserBankAccount;
+import com.ebanking.payment.repository.UserAccountRepo;
 import com.ebanking.payment.service.MyUserService;
 import com.ebanking.payment.util.LoggingUtil;
 import org.springframework.boot.CommandLineRunner;
@@ -33,7 +35,7 @@ public class PaymentApplication {
 	}
 
 	@Bean
-	CommandLineRunner run(MyUserService myUserService) {
+	CommandLineRunner run(MyUserService myUserService, UserAccountRepo userAccountRepo) {
 		return args -> {
 
 			myUserService.saveUser(new MyUser(null, "John Travolta", "john", "1234"));
@@ -41,7 +43,7 @@ public class PaymentApplication {
 			myUserService.saveUser(new MyUser(null, "Jim Carry", "jim", "1234"));
 			myUserService.saveUser(new MyUser(null, "Arnold Schwarzenegger", "arnold", "1234"));
 
-
+			userAccountRepo.save(new UserBankAccount(null, "arnold", "GB54-BOFA-165050-12345678", 100_000.0));
 		};
 	}
 }

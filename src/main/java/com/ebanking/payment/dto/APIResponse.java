@@ -12,8 +12,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class APIResponse<T> {
-    BigDecimal credit;
-    BigDecimal debit;
+    Double credit;
+    Double debit;
     T response;
 
     public APIResponse(int size, List<Transaction> result) {

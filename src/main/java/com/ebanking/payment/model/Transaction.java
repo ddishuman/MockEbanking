@@ -27,7 +27,13 @@ public class Transaction {
     @Type(type = "org.hibernate.type.UUIDCharType")
     public UUID tid;
 
-    public String amount;
+    public String currency;
+
+    public Double getAmount() {
+        return amount;
+    }
+
+    private Double amount;
 
     public String iban;
 

@@ -43,11 +43,12 @@ public class UserResource {
     @GetMapping("/kafka/publish/{name}")
     public String post(@PathVariable("name") final String name) {
 
-        // ### TODO: kafka msg format
+        // ### kafka msg format
         for (int i=0; i< 1_000; i++) {
             kafkaTemplate.send(TOPIC, new Transaction(UUID.randomUUID(),
-                    Currency.getCurrency().toString() + " " + rndCurrency.nextInt(100) +1,
-                    "CH93-0000-0000-0000-0000-0",
+                    Currency.getCurrency().toString(),
+                    rndCurrency.nextDouble(100) +1,
+                    "GB54-BOFA-165050-12345678",
                     new Date(), "Online payment"));
         }
 
