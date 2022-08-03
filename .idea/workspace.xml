@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c5f59c-86d1-4526-b855-661e309e96d6" name="Changes" comment="Merge remote-tracking branch 'origin/master'">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/UserAccountRepo.java" afterDir="false" />
+    <list default="true" id="f1c5f59c-86d1-4526-b855-661e309e96d6" name="Changes" comment="1. add mock data(user bank account)&#10;2. add mock exchange rate">
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/PaymentApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/controller/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/dto/APIResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/dto/APIResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/UserBankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/model/UserBankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/TransactionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/repository/TransactionRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ebanking/payment/resource/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/controller/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/controller/TransactionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/dto/APIResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/dto/APIResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/UserBankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/model/UserBankAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource$Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource$Currency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/resource/UserResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ebanking/payment/PaymentApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ebanking/payment/PaymentApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +181,7 @@
       <workItem from="1659258111831" duration="9746000" />
       <workItem from="1659406964521" duration="22543000" />
       <workItem from="1659449472001" duration="5736000" />
-      <workItem from="1659481787378" duration="10417000" />
+      <workItem from="1659481787378" duration="12312000" />
     </task>
     <task id="LOCAL-00001" summary="1. main structure &amp; module test">
       <created>1657849091282</created>
@@ -251,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659486813582</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1. add mock data(user bank account)&#10;2. add mock exchange rate">
+      <created>1659493218592</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659493218592</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +288,8 @@
     <MESSAGE value="1. reverse some config errors.&#10;2. add the Transaction class for sending to kafka." />
     <MESSAGE value="1. add pagination &#10;2. add config files for junit tests but didn't work" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="1. add mock data(user bank account)&#10;2. add mock exchange rate" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. add mock data(user bank account)&#10;2. add mock exchange rate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
